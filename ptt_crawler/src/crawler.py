@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 
-from data import *
-from ptt_print import pretty_print
+from src.data import *
+from src.ptt_print import pretty_print
 
 
 def previous(url):
