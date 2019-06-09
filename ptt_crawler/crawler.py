@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 
-from data import *
+from data import Meta
 from ptt_print import pretty_print
 
 
