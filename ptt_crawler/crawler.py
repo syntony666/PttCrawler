@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 
-from src.data import *
-from src.ptt_print import pretty_print
+from data import *
+from ptt_print import pretty_print
 
 
 def previous(res):		# crawl previous page that receive the origin page's resource
@@ -25,6 +25,6 @@ def ask18(board, url):  # set cookie to access the broad
         'from': '/bbs/'+board+'/index.html',
         'yes': 'yes'
     }
-    r1 = r.post('https://www.ptt.cc/ask/over18?from=%2Fbbs%2F' +
-                board + '%2Findex.html', payload)
+    r.post('https://www.ptt.cc/ask/over18?from=%2Fbbs%2F' +
+           board + '%2Findex.html', payload)
     return BeautifulSoup(r.get(url).text, 'html.parser')
