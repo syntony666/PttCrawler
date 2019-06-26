@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from crawler import pretty_print, ask18, previous, dataOutput
+from crawler import ask18, previous, dataOutput
 
 # the soul of this crawler
 

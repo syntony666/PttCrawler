@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 
-from data import Meta
-from ptt_print import pretty_print
+from data import Data
+from pprint import pretty_print
 
 
 def previous(res):		# crawl previous page that receive the origin page's resource
@@ -12,7 +12,7 @@ def previous(res):		# crawl previous page that receive the origin page's resourc
 
 
 def dataOutput(res):  # print the result
-    m = Meta(res)
+    m = Data(res)
     for a, b, c, d, e in zip(m.push(), m.title(), m.date(), m.author(), m.link()):
         pretty_print(a, b, c, d)
         print(e+'\n')

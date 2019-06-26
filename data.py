@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 
 
-class Meta():
+class Data():
     def __init__(self, res):
         self.res = res.html
 
